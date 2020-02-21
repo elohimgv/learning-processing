@@ -3,10 +3,6 @@
 * Sketch name: toki_1_3.pde
 */
 
-// TODO: Add variables
-// TOOD: Add randomness
-// TODO: Add a button to control the background color 
-// TODO: Delete message that appear on the console.
 boolean button = false;
 int x;
 int y;
