@@ -15,6 +15,10 @@ float R = 150;
 float G;
 float B = 170;
 
+// Variables for speed 'x' and 'y' positions
+float xspeed = 2;
+float yspeed = 2;
+
 void setup() {
   // Sketch window size
   size(500, 500);
@@ -26,6 +30,18 @@ void setup() {
 }
 
 void draw() {
+  // Change the location of Toki by speed
+  x_pos = x_pos + xspeed;
+  y_pos = y_pos + yspeed;
+  
+  if (x_pos > width || x_pos < 0) {
+    xspeed = xspeed * -1;
+  }
+  
+  if (y_pos > height || y_pos < 0) {
+    yspeed = yspeed * -1;
+  }
+  
   // Button
   G = random(0, 255);
   rectMode(CENTER);
