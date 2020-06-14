@@ -10,8 +10,8 @@ void setup() {
 
 void draw() {
  background(0);
- float x = xtime;
- float y = ytime;
+ float x = noise(xtime) * width;
+ float y = noise(ytime) * height;
  xtime = xtime + increment;
  ytime = ytime + increment;
  
