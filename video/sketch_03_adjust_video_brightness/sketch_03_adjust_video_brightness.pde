@@ -5,6 +5,7 @@ void setup() {
   size(320, 240);
   // Initialize Capture object via constructor
   video = new Capture(this, 320, 240, 30); // video is 320x240, @30 fps
+  video.start();
   background(0);
 }
 
