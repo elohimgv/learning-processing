@@ -10,7 +10,7 @@ void setup() {
   size(960, 540); 
   background(0);
   movie = new Movie(this, "Happy woman enjoying the nature.mov");
-  movie.play(); // which loops it continuously
+  movie.play(); // which loops it once
 }
 
 void draw() {
